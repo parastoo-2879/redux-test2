@@ -1,0 +1,55 @@
+import reducer from "./cart"
+import {configureStore} from "@reduxjs/toolkit"
+
+export default function(){
+  return configureStore({ reducer })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function createStore() {
+//   let state
+//   let listeners = []
+
+//   function subscribe(listener) {
+//     listeners.push(listener)
+//   }
+
+//   function dispatch(action) {
+//     state = reducer(state, action)
+//     for (let i = 0; i < listeners.length; i++) listeners[i]()
+//   }
+
+//   function getState() {
+//     return state
+//   }
+
+//   return {
+//     subscribe,
+//     dispatch,
+//     getState,
+//   }
+
+// }
+
+// export default createStore()
